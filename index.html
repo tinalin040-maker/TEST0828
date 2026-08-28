@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>業績 Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>業績 Dashboard</h1>
+
+        <!-- 數據卡片區域 -->
+        <div class="cards">
+            <div class="card">
+                <h3>總銷售額</h3>
+                <p id="total-sales">$0</p>
+            </div>
+            <div class="card">
+                <h3>總訂單數</h3>
+                <p id="total-orders">0</p>
+            </div>
+            <div class="card">
+                <h3>平均單價</h3>
+                <p id="avg-order-value">$0</p>
+            </div>
+        </div>
+
+        <!-- 主要內容區域 -->
+        <div class="main-content">
+            <!-- 圓餅圖區域 -->
+            <div class="chart-container">
+                <h2>業務員銷售佔比</h2>
+                <div class="canvas-wrapper">
+                    <canvas id="salesPieChart" width="300" height="300"></canvas>
+                </div>
+            </div>
+
+            <!-- 數據表格區域 -->
+            <div class="table-container">
+                <h2>最近銷售明細</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>業務員</th>
+                            <th>銷售金額</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sales-table-body">
+                        <!-- JavaScript 會動態產生內容 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 載入根目錄的 script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
